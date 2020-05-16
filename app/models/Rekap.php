@@ -15,7 +15,7 @@ class Rekap extends Model
         try {
             $db = static::getDb();
             
-            $stmt = $db->query('SELECT SUM(jumlah_bantuan),jenis_bantuan FROM penyumbang GROUP BY nama_bantuan');
+            $stmt = $db->query('SELECT SUM(jumlah_bantuan),jenis_bantuan FROM penyumbang GROUP BY jenis_bantuan');
 
             $results = $stmt->fetchAll(PDO::FETCH_ASSOC);
 

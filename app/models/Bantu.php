@@ -32,9 +32,9 @@ class Bantu extends Model
         try {
             $db = static::getDb();
             
-            $stmt = $db->prepare('SELECT * FROM penyumbang where id = :id');
+            $stmt = $db->prepare('SELECT * FROM penyumbang WHERE id = :id');
             $stmt->bindParam(":id", $id);
-
+            
             $stmt->execute();
 
             $results = $stmt->fetch(PDO::FETCH_ASSOC);
@@ -75,76 +75,6 @@ class Bantu extends Model
         }
     }
 
-    public static function delete($id)
-    {
 
-        try {
-
-            $db = static::getDb();
-
-            $sql = "DELETE FROM agenda WHERE id = :id";
-
-            $stmt = $db->prepare($sql);
-            
-            $stmt->bindParam(":id", $id, PDO::PARAM_INT);
-
-            $stmt->execute();
-
-            return $stmt->rowCount();
-
-        } catch (PDOException $e) {
-            echo "Terjadi kegagalan saat menghapus data";
-        }
-    }
-
-    public static function update($data)
-    {
-
-        try {
-
-            $db = static::getDb();
-
-            $sql = "UPDATE agenda
-                    SET title = :title,
-                        description = :description,
-                        place = :place,
-                        time = :time
-                    WHERE id = :id";
-
-            $stmt = $db->prepare($sql);
-            
-            $stmt->bindParam(":title", $data['title']);
-            $stmt->bindParam(":description", $data['description']);
-            $stmt->bindParam(":place", $data['place']);
-            $stmt->bindParam(":time", $data['time'], PDO::PARAM_STR);
-            $stmt->bindParam(":id", $data['id']);
-
-            $stmt->execute();
-
-            return $stmt->rowCount();
-
-        } catch (PDOException $e) {
-            echo "Terjadi kegagalan saat menyimpan data";
-        }
-    }
-
-    public function search($keyword)
-    {
-        try {
-            $db = static::getDb();
-            
-            $stmt = $db->prepare('SELECT * FROM agenda where title LIKE :title');
-            $stmt->bindValue(":title", "%$keyword%");
-
-            $stmt->execute();
-
-            $results = $stmt->fetchAll(PDO::FETCH_ASSOC);
-
-            return $results;
-        } catch (PDOException $e) {
-            //echo $e->getMessage();
-            echo "Terjadi kegagalan koneksi ke database.";
-        }
-    }
     
 }
