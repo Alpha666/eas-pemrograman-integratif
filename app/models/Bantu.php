@@ -56,13 +56,14 @@ class Bantu extends Model
 
             // $sql = "INSERT INTO barang (jenis_bantuan, nama_bantuan, jumlah_bantuan)
             //             VALUES(:bantuan2, :makan1, :jumlah1)";
-            $sql = "INSERT INTO penyumbang (nama,nama_bantuan, jumlah_bantuan)
-            VALUES(:nama, :nama_bantuan, :jumlah_bantuan)";
+            $sql = "INSERT INTO penyumbang (nama,nama_bantuan, jenis_bantuan, jumlah_bantuan)
+            VALUES(:nama, :nama_bantuan, :jenis_bantuan, :jumlah_bantuan)";
 
             $stmt = $db->prepare($sql);
             
             $stmt->bindParam(":nama", $data['nama']);
             $stmt->bindParam(":nama_bantuan", $data['nama_bantuan']);
+            $stmt->bindParam(":jenis_bantuan", $data['jenis_bantuan']);
             $stmt->bindParam(":jumlah_bantuan", $data['jumlah_bantuan']);
 
             $stmt->execute();

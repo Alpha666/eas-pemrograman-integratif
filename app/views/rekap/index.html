@@ -16,7 +16,7 @@
             <ul class="list-group">
                 {% for rekap in rekaps %}
                 <li class="list-group-item">
-                    {{ rekap['nama_bantuan'] }}
+                    {{ rekap['jenis_bantuan'] }}
                     {{ rekap['SUM(jumlah_bantuan)']}}
                     <!-- <a href="{{ BASE_URL }}/rekap/delete/{{ rekap['id'] }}" class="badge badge-danger float-right ml-1" onclick="return confirm('yakin?');">delete</a>
                     <a href="{{ BASE_URL }}/rekap/update/{{ rekap['id'] }}" class="badge badge-success float-right ml-1 tampilModalUbah" data-toggle="modal" data-target="#formModal" data-id="{{ rekap['nama'] }}">update</a> -->

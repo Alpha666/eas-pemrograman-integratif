@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: May 14, 2020 at 01:21 PM
+-- Generation Time: May 16, 2020 at 09:47 AM
 -- Server version: 10.1.38-MariaDB
 -- PHP Version: 7.3.2
 
@@ -25,20 +25,6 @@ SET time_zone = "+00:00";
 -- --------------------------------------------------------
 
 --
--- Table structure for table `barang`
---
-
-CREATE TABLE `barang` (
-  `id_barang` int(11) NOT NULL,
-  `jenis_bantuan` varchar(30) NOT NULL,
-  `nama_bantuan` varchar(50) NOT NULL,
-  `jumlah_bantuan` int(30) NOT NULL,
-  `id_penyumbang` int(11) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
-
--- --------------------------------------------------------
-
---
 -- Table structure for table `penyumbang`
 --
 
@@ -46,6 +32,7 @@ CREATE TABLE `penyumbang` (
   `id` int(100) NOT NULL,
   `nama` varchar(100) NOT NULL,
   `nama_bantuan` varchar(50) NOT NULL,
+  `jenis_bantuan` varchar(100) NOT NULL,
   `jumlah_bantuan` int(30) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
@@ -53,22 +40,15 @@ CREATE TABLE `penyumbang` (
 -- Dumping data for table `penyumbang`
 --
 
-INSERT INTO `penyumbang` (`id`, `nama`, `nama_bantuan`, `jumlah_bantuan`) VALUES
-(5, 'Christian Andrew', 'Beras', 100),
-(6, 'Christian Andrew 2', 'Uang', 500000),
-(7, 'Christian Andrew 3', 'Beras', 200),
-(8, 'Christian Andrew 4', 'Masker', 4);
+INSERT INTO `penyumbang` (`id`, `nama`, `nama_bantuan`, `jenis_bantuan`, `jumlah_bantuan`) VALUES
+(12, 'Christian Andrew', 'Beras', 'Sembako', 100),
+(13, 'Christian Andrew 2', 'Bodrex', 'Obat', 100),
+(14, 'Christian Andrew 3', 'Debit', 'Uang', 100000),
+(16, 'Christian Andrew 4', 'Baju', 'Pakaian', 10);
 
 --
 -- Indexes for dumped tables
 --
-
---
--- Indexes for table `barang`
---
-ALTER TABLE `barang`
-  ADD PRIMARY KEY (`id_barang`),
-  ADD KEY `id_penyumbang` (`id_penyumbang`);
 
 --
 -- Indexes for table `penyumbang`
@@ -82,26 +62,10 @@ ALTER TABLE `penyumbang`
 --
 
 --
--- AUTO_INCREMENT for table `barang`
---
-ALTER TABLE `barang`
-  MODIFY `id_barang` int(11) NOT NULL AUTO_INCREMENT;
-
---
 -- AUTO_INCREMENT for table `penyumbang`
 --
 ALTER TABLE `penyumbang`
-  MODIFY `id` int(100) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
-
---
--- Constraints for dumped tables
---
-
---
--- Constraints for table `barang`
---
-ALTER TABLE `barang`
-  ADD CONSTRAINT `id_penyumbang` FOREIGN KEY (`id_penyumbang`) REFERENCES `penyumbang` (`id`);
+  MODIFY `id` int(100) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=17;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
