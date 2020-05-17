@@ -57,12 +57,12 @@ Berikut adalah tampilan home dari ```Website Bantuan Covid```
 
 ![home](https://github.com/Alpha666/eas-pemrograman-integratif/blob/master/screenshot/Home.png)
 
-Berikut adalah tampilan Bantu dari ```Website Bantuan Covid``` dimana fungsi nya adalah memasukkan nama orang yang memberi bantuan dan juga barang apa yang di sumbangkan beserta jumlah nya.   
+Berikut adalah tampilan ```Bantu``` dari ```Website Bantuan Covid``` dimana fungsi nya adalah memasukkan nama orang yang memberi bantuan dan juga barang apa yang di sumbangkan beserta jumlah nya.   
 
 
 ![bantu](https://github.com/Alpha666/eas-pemrograman-integratif/blob/master/screenshot/Bantu.png)
 
-Dan yang terakhir adalah tampilan Rekap dari ```Website Bantuan Covid``` dimana fungsi nya adalah menampilkan rekap barang yang sudah disumbangkan dan dibagi berdasarkan kategori yang ada. 
+Dan yang terakhir adalah tampilan ```Rekap``` dari ```Website Bantuan Covid``` dimana fungsi nya adalah menampilkan rekap barang yang sudah disumbangkan dan dibagi berdasarkan kategori yang ada. 
 
 Setiap kategori menampilkan berapa jumlah barang yang ada.
 
