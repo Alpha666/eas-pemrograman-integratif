@@ -66,9 +66,7 @@ Berikut ini adalah tampilan modal dari view ```bantu``` dimana bisa dibilang ini
 
 ![modal](https://github.com/Alpha666/eas-pemrograman-integratif/blob/master/screenshot/Modal.png)
 
-Dan yang terakhir adalah tampilan ```Rekap``` dari ```Website Bantuan Covid``` dimana fungsi nya adalah menampilkan rekap barang yang sudah disumbangkan dan dibagi berdasarkan kategori yang ada. 
-
-Setiap kategori menampilkan berapa jumlah barang yang ada.
+Dan yang terakhir adalah tampilan ```Rekap``` dari ```Website Bantuan Covid``` dimana fungsi nya adalah menampilkan rekap barang yang sudah disumbangkan dan dibagi berdasarkan kategori yang ada. Selain itu, setiap kategori akan menampilkan berapa jumlah barang yang ada.
 
 ![rekap](https://github.com/Alpha666/eas-pemrograman-integratif/blob/master/screenshot/Rekap.png)
 
@@ -77,6 +75,16 @@ Setiap kategori menampilkan berapa jumlah barang yang ada.
 
 * Pada menu bantu user jika ingin menginputkan lebih dari 1 barang maka harus memasukkan ulang nama.
 
-* user yang sama tidak bisa hanya tampil 1 kali saja melainkan akan tampil 2 kali.
+* User yang sama tidak bisa hanya tampil 1 kali saja melainkan akan tampil 2 kali sehingga jika user di tekan akan menampilkan 1 item saja sementara user bisa memasukkan beberapa item sekaligus.
 
-* Rekap 
+* Rekap belum ada fungsi show dikarenakan belum sempat ditambah dimana fungsi nya akan sama seperti show pada ```Bantu``` akan menampilkan detail dari bantuan yang diberikan.
+
+# Konklusi
+
+Setelah melakukan pencarian mengenai masalah yang ada di atas maka jawaban yang saya dapat adalah sebagai berikut.
+
+* Jika ingin menginput lebih dari 1 barang maka ada dua pilihan dimana pilihan pertama adalah kita bisa menggunakan session yang harus merombak semua program yang sudah ada. Solusi ke-dua adalah menggunakan ajax namun saya masih belum begitu paham bagaimana menggunakan ajax pada pemrograman MVC.
+
+* User yang sama bisa ditampilkan 1 kali saja kita bisa menggunakan query pada database menggunakan command ```GROUP BY``` dimana akan melakukan select pada database dan di group berdasarkan nama. Untuk solusi ini sama seperti sebelumnya dimana kita harus merombak total aplikasi yang ada dan membangun ulang.
+
+* Rekap bisa di copy command dari model ```Bantu``` dimana bisa menampilkan apa saja yang ada dalam kategori tersebut menggunakan beberapa parameter pada SQL seperti ```GROUP BY``` dan melakukan seleksi berdasarkan kategori yang ada.
