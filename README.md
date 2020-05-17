@@ -67,3 +67,12 @@ Dan yang terakhir adalah tampilan ```Rekap``` dari ```Website Bantuan Covid``` d
 Setiap kategori menampilkan berapa jumlah barang yang ada.
 
 ![rekap](https://github.com/Alpha666/eas-pemrograman-integratif/blob/master/screenshot/Rekap.png)
+
+
+# Permasalahan
+
+* Pada menu bantu user jika ingin menginputkan lebih dari 1 barang maka harus memasukkan ulang nama.
+
+* user yang sama tidak bisa hanya tampil 1 kali saja melainkan akan tampil 2 kali.
+
+* Rekap 
