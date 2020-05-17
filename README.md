@@ -62,6 +62,10 @@ Berikut adalah tampilan ```Bantu``` dari ```Website Bantuan Covid``` dimana fung
 
 ![bantu](https://github.com/Alpha666/eas-pemrograman-integratif/blob/master/screenshot/Bantu.png)
 
+Berikut ini adalah tampilan modal dari view ```bantu``` dimana bisa dibilang ini adalah form untuk memasukkan donasi yang orang berikan
+
+![modal](https://github.com/Alpha666/eas-pemrograman-integratif/blob/master/screenshot/Modal.png)
+
 Dan yang terakhir adalah tampilan ```Rekap``` dari ```Website Bantuan Covid``` dimana fungsi nya adalah menampilkan rekap barang yang sudah disumbangkan dan dibagi berdasarkan kategori yang ada. 
 
 Setiap kategori menampilkan berapa jumlah barang yang ada.
