@@ -3,12 +3,12 @@
 ## Nama : Christian Andrew
 ## NRP : 05311840000017
 
-## SETUP PROGRAM
+# SETUP PROGRAM
 
 * Database yang saya gunakan di sini yaitu ```penyumbang.sql```
 * Username dan Password untuk database yang saya gunakan yaitu ```App/Core/Constants.php```
 
-## Controllers
+# Controllers
 
 Controllers yang saya gunakan ada 3 yaitu 
 * ```BantuController```
@@ -22,7 +22,7 @@ Pada controller ```HomeController``` fungsi nya adalah menampilkan halaman home.
 Pada Controller ```RekapController``` fungsi ```index()``` berfungsi untuk menampilkan index dari view ```rekap```.
 
 
-## Models
+# Models
 
 Model yang saya gunakan ada 2 yaitu 
 * ```Bantu```
@@ -60,6 +60,8 @@ Berikut adalah tampilan home dari ```Website Bantuan Covid```
 
 ![home](https://github.com/Alpha666/eas-pemrograman-integratif/blob/master/screenshot/Home.png)
 
+### Bantu
+
 Berikut adalah tampilan ```Bantu``` dari ```Website Bantuan Covid``` dimana fungsi nya adalah memasukkan nama orang yang memberi bantuan dan juga barang apa yang di sumbangkan beserta jumlah nya.   
 
 
@@ -69,9 +71,25 @@ Berikut ini adalah tampilan modal dari view ```bantu``` dimana bisa dibilang ini
 
 ![modal](https://github.com/Alpha666/eas-pemrograman-integratif/blob/master/screenshot/Modal.png)
 
+### Rekap
+
 Dan yang terakhir adalah tampilan ```Rekap``` dari ```Website Bantuan Covid``` dimana fungsi nya adalah menampilkan rekap barang yang sudah disumbangkan dan dibagi berdasarkan kategori yang ada. Selain itu, setiap kategori akan menampilkan berapa jumlah barang yang ada.
 
 ![rekap](https://github.com/Alpha666/eas-pemrograman-integratif/blob/master/screenshot/Rekap.png)
+
+
+# Contoh Input dan Output
+
+## Input View Bantu
+
+Pada contoh input kita akan memasukkan nama ```Andrew``` dan kita akan menyumbang ```Obat``` dengan nama obat ```Bodrex``` dengna jumlah ```10``` dan setelah itu kita tekan tombol ```Tambah Data```.
+![input]()
+"ini gambar masukin input "
+
+## Ouput View Bantu
+
+Setelah kita masukkan ke database maka akan menambah sebuah list baru paling bawah dengan nama ```Andrew``` dan ketika di tekan ```Show``` maka akan menampilkan data terperinci sesuai dengan nama yang di tekan. Data yang di tampilkan pada show adalah ```nama```, ```nama bantuan``` yang diberikan dan juga ``` jumlah bantuan``` yang diberikan.
+
 
 
 # Permasalahan
