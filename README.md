@@ -83,6 +83,7 @@ Dan yang terakhir adalah tampilan ```Rekap``` dari ```Website Bantuan Covid``` d
 ## Input View Bantu
 
 Pada contoh input kita akan memasukkan nama ```Andrew``` dan kita akan menyumbang ```Obat``` dengan nama obat ```Bodrex``` dengna jumlah ```10``` dan setelah itu kita tekan tombol ```Tambah Data```.
+
 ![input](https://github.com/Alpha666/eas-pemrograman-integratif/blob/master/screenshot/input.png)
 
 ## Ouput View Bantu
