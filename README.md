@@ -83,12 +83,18 @@ Dan yang terakhir adalah tampilan ```Rekap``` dari ```Website Bantuan Covid``` d
 ## Input View Bantu
 
 Pada contoh input kita akan memasukkan nama ```Andrew``` dan kita akan menyumbang ```Obat``` dengan nama obat ```Bodrex``` dengna jumlah ```10``` dan setelah itu kita tekan tombol ```Tambah Data```.
-![input]()
-"ini gambar masukin input "
+![input](https://github.com/Alpha666/eas-pemrograman-integratif/blob/master/screenshot/input.png)
 
 ## Ouput View Bantu
 
-Setelah kita masukkan ke database maka akan menambah sebuah list baru paling bawah dengan nama ```Andrew``` dan ketika di tekan ```Show``` maka akan menampilkan data terperinci sesuai dengan nama yang di tekan. Data yang di tampilkan pada show adalah ```nama```, ```nama bantuan``` yang diberikan dan juga ``` jumlah bantuan``` yang diberikan.
+Setelah kita masukkan ke database maka akan menambah sebuah list baru paling bawah dengan nama ```Andrew```.
+
+![output](https://github.com/Alpha666/eas-pemrograman-integratif/blob/master/screenshot/output.png)
+
+
+ketika di tekan ```Show``` maka akan menampilkan data terperinci sesuai dengan nama yang di tekan. Data yang di tampilkan pada show adalah ```nama```, ```nama bantuan``` yang diberikan dan juga ``` jumlah bantuan``` yang diberikan.
+
+![output2](https://github.com/Alpha666/eas-pemrograman-integratif/blob/master/screenshot/output2.png)
 
 
 
