@@ -1,5 +1,8 @@
 # EAS PEMROGRAMAN INTEGRATIF
 
+## Nama : Christian Andrew
+## NRP : 05311840000017
+
 ## SETUP PROGRAM
 
 * Database yang saya gunakan di sini yaitu ```penyumbang.sql```
